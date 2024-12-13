@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "luotianyizaisheng",
+	"version": "${version}",
+	"name": "Luo Tianyi 12th album Zaisheng",
+	"description": "洛天依12周年專輯《再生》",
+	"authors": [
+		"honggggv"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/luotianyizaisheng/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.luotianyi.zaisheng.LuoTianyi12thAlbumZaisheng"
+		],
+		"fabric-datagen": [
+			"com.luotianyi.zaisheng.LuoTianyi12thAlbumZaishengDataGenerator"
+		],
+		"client": [
+			"com.luotianyi.zaisheng.LuoTianyi12thAlbumZaishengClient"
+		]
+	},
+	"mixins": [
+		"luotianyizaisheng.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.9",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
